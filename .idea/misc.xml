@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SwUserDefinedSpecifications">
+    <option name="specTypeByUrl">
+      <map>
+        <entry key="file://$PROJECT_DIR$/openapi/__tests__/schemas/ArrayFieldData.yaml" value="openapi30" />
+        <entry key="file://$PROJECT_DIR$/openapi/__tests__/schemas/NotInvalidFiledName.yaml" value="openapi30" />
+        <entry key="file://$PROJECT_DIR$/openapi/__tests__/schemas/SchoolEnum.yaml" value="openapi30" />
+        <entry key="file://$PROJECT_DIR$/openapi/__tests__/schemas/WithOutTitle.yaml" value="openapi30" />
+      </map>
+    </option>
+  </component>
+</project>
