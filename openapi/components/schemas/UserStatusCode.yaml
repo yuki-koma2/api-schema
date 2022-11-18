@@ -1,0 +1,17 @@
+type: string
+title: UserStatusCode
+
+description: |
+  ユーザーのステータス
+  - `REGISTERED` - 登録済み
+  - `ACTIVATION_AWAIT` - 本登録待ち 
+  - `ACTIVE` - 本登録済み
+  - `LIMITED_ACTIVE` - 制限中
+  - `LEFT` - 退会
+enum:
+  - REGISTERED
+  - ACTIVATION_AWAIT
+  - ACTIVE
+  - LIMITED_ACTIVE
+  - LEFT
+example: ACTIVE

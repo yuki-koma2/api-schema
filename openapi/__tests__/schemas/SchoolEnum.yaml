@@ -1,0 +1,11 @@
+title: SchoolGradeEnumTitle
+type: string
+description: Enumのタイトルが正しくない例
+enum:
+  - MBA
+  - MASTERS
+  - BACHELORS
+  - COLLEGE
+  - HIGH_SCHOOL
+  - OTHER
+example: MBA

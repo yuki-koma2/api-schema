@@ -1,0 +1,36 @@
+openapi: 3.0.3
+info:
+  title: my-custom-api
+  version: 0.0.1
+  description: this is my custom api
+  contact:
+    name: yukikoma2
+    url: 'none'
+tags:
+  - name: user
+paths:
+  /api/users/me:
+    get:
+      summary: ユーザーの基本情報を取得する
+      operationId: get-api-users-me
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserDto'
+        '401':
+          description: Unauthorized
+        '404':
+          description: Not Found
+      tags:
+        - user
+components:
+  schemas:
+    UserDto:
+      $ref: ./components/schemas/UserDto.yaml
+    UserStatusCode:
+      $ref: ./components/schemas/UserStatusCode.yaml
+
+

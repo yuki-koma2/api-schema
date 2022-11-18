@@ -1,0 +1,40 @@
+formats:
+  - oas3
+extends:
+  - - 'spectral:oas'
+    - recommended
+functions: [
+  enum-schema-suffix-naming-rule,
+  enum-field-suffix-naming-rule
+]
+rules:
+  object-require-title:
+    severity: error
+    given: '$..components..*[[?(@.type==="object")]]'
+    then:
+      field: title
+      function: defined
+  enum-require-title:
+    severity: error
+    given: '$..components..*[[?(@.enum)]]'
+    then:
+      field: title
+      function: defined
+  enum-suffix:
+    severity: error
+    given: '$..components..*[[?(@.enum)]]'
+    then:
+      field: title
+      function: pattern
+      functionOptions:
+        match: '^.*Code$'
+  enum-required-suffix:
+    severity: error
+    given: '$.components.schemas'
+    then:
+      function: "enum-schema-suffix-naming-rule"
+  enum-field-suffix-rule: # 'enumを使用するフィールドは[Code] or [Codes]で終わる必要があることを検証する'
+    severity: error
+    given: '$..components..*[[?(@.type==="object")]]'
+    then:
+      function: "enum-field-suffix-naming-rule"

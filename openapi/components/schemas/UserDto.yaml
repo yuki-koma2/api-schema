@@ -1,0 +1,29 @@
+title: UserDto
+type: object
+description: ユーザーの基本情報
+properties:
+  usrId:
+    type: integer
+    format: int64
+    description: ユーザーID
+  emailAddress:
+    type: string
+    description: emailアドレス
+  statusCode:
+    $ref: ./UserStatusCode.yaml
+  firstName:
+    type: string
+    description: 氏名[名]
+  lastName:
+    type: string
+    description: 氏名[姓]
+  middleName:
+    type: string
+    nullable: true
+    description: 氏名[ミドルネーム]
+required:
+  - userId
+  - emailAddress
+  - statusCode
+  - firstName
+  - lastName

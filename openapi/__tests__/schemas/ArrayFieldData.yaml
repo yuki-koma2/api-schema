@@ -1,0 +1,11 @@
+title: 学校区分ENUMを配列で渡せる場合の例
+type: object
+properties:
+  schoolCodesArray:
+    type: array
+    items:
+      $ref: ./SchoolEnum.yaml
+  notEnumArray:
+    type: array
+    items:
+      type: string

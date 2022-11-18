@@ -1,0 +1,5 @@
+title: フィールド名のサフィックスが間違っている例
+type: object
+properties:
+  schoolCodeFiled:
+    $ref: ./SchoolEnum.yaml

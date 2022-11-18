@@ -1,0 +1,32 @@
+{
+  "name": "openapi",
+  "version": "1.0.0",
+  "description": "api schema with openApi",
+  "main": "openapi.yaml",
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-typescript": "^7.18.6",
+    "@stoplight/spectral-core": "^1.15.1",
+    "@stoplight/spectral-functions": "^1.7.1",
+    "@stoplight/spectral-parsers": "^1.0.2",
+    "@types/jest": "^29.2.1",
+    "babel-jest": "^29.2.2",
+    "fs": "^0.0.1-security",
+    "jest": "^29.2.2",
+    "js-yaml": "^4.1.0",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "@stoplight/spectral-ruleset-bundler": "^1.4.0"
+  }
+}

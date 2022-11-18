@@ -1,0 +1,27 @@
+{
+  "name": "koma2-schema",
+  "version": "1.0.0",
+  "private": true,
+  "description": "this is for practice",
+  "workspaces": [
+    "openapi"
+  ],
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test:openApi": "npm run test --workspace=openapi",
+    "lint": "spectral lint openapi/openapi.yaml --ruleset openapi/.spectral.yaml",
+    "install:openapi": "npm install -w openapi",
+    "doc": "TBD",
+    "generate:openapi": "TBD"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/repo.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}

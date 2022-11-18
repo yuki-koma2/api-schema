@@ -1,0 +1,28 @@
+openapi: 3.0.3
+info:
+  title: open api for practice and testing
+  version: 0.0.1
+  description: api schema for test
+components:
+  schemas:
+    AddressTestData:
+      $ref: ./__tests__/schemas/WithOutTitle.yaml
+    SchoolEnumDef:
+      $ref: ./__tests__/schemas/SchoolEnum.yaml
+    SchoolData:
+      $ref: ./__tests__/schemas/NotInvalidFiledName.yaml
+    ArrayFieldData:
+      $ref: ./__tests__/schemas/ArrayFieldData.yaml
+paths:
+  /example:
+    get:
+      summary: example
+      operationId: example
+      responses:
+        '200':
+          description: example
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SchoolEnumDef'
+

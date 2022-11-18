@@ -1,0 +1,11 @@
+type: object
+description: titleが設定されていないオブジェクト
+properties:
+  prefecture:
+    type: string
+    nullable: true
+    description: 都道府県
+  city:
+    type: string
+    nullable: true
+    description: 市区町村
